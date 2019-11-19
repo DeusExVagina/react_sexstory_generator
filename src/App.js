@@ -129,7 +129,7 @@ export default class App extends React.Component {
         <div className="name">
           <div>
             <span className="firstname">Sex Scene Generator</span>
-            <br />
+            <h1>Random Title</h1>
           </div>
 
         </div>
@@ -181,8 +181,8 @@ function genderReplace(inputString) {
   }
   text = text.replace(/\. he/gm, '. He');
   text = text.replace(/\. she/gm, '. She');
-  text = text.replace(/^he/gm, 'He');
-  text = text.replace(/^she/gm, 'She');
+  text = text.replace(/\\nhe/gm, '\nHe');
+  text = text.replace(/\\nshe/gm, '\nShe');
 
   return text;
 }
