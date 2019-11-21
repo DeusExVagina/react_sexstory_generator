@@ -26,7 +26,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://raw.githubusercontent.com/DeusExVagina/sexscenegenerator/master/sexscenegenerator/JSONFIles/kissingactions.json")
+    fetch("https://raw.githubusercontent.com/DeusExVagina/react_sexstory_generator/master/JSONFIles/kissingactions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
@@ -34,7 +34,7 @@ export default class App extends React.Component {
         });
 
       });
-    fetch("https://raw.githubusercontent.com/DeusExVagina/sexscenegenerator/master/sexscenegenerator/JSONFIles/undressingactions.json")
+    fetch("https://raw.githubusercontent.com/DeusExVagina/react_sexstory_generator/master/JSONFIles/undressingactions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
@@ -42,7 +42,7 @@ export default class App extends React.Component {
         });
 
       });
-    fetch("https://raw.githubusercontent.com/DeusExVagina/sexscenegenerator/master/sexscenegenerator/JSONFIles/handjobActions.json")
+    fetch("https://raw.githubusercontent.com/DeusExVagina/react_sexstory_generator/master/JSONFIles/handjobActions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
@@ -50,7 +50,7 @@ export default class App extends React.Component {
         });
 
       });
-    fetch("https://raw.githubusercontent.com/DeusExVagina/sexscenegenerator/master/sexscenegenerator/JSONFIles/oralsexactions.json")
+    fetch("https://raw.githubusercontent.com/DeusExVagina/react_sexstory_generator/master/JSONFIles/oralsexactions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
@@ -58,7 +58,7 @@ export default class App extends React.Component {
         });
 
       });
-    fetch("https://raw.githubusercontent.com/DeusExVagina/sexscenegenerator/master/sexscenegenerator/JSONFIles/penetrationstartactions.json")
+    fetch("https://raw.githubusercontent.com/DeusExVagina/react_sexstory_generator/master/JSONFIles/penetrationstartactions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
@@ -66,28 +66,28 @@ export default class App extends React.Component {
         });
 
       });
-    fetch("https://raw.githubusercontent.com/DeusExVagina/sexscenegenerator/master/sexscenegenerator/JSONFIles/penetrationactions.json")
+    fetch("https://raw.githubusercontent.com/DeusExVagina/react_sexstory_generator/master/JSONFIles/penetrationactions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
           penetrationActions: data.lines
         });
       });
-    fetch("https://raw.githubusercontent.com/DeusExVagina/sexscenegenerator/master/sexscenegenerator/JSONFIles/afterglowactions.json")
+    fetch("https://raw.githubusercontent.com/DeusExVagina/react_sexstory_generator/master/JSONFIles/afterglowactions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
           afterglowActions: data.lines
         });
       });
-    fetch("https://raw.githubusercontent.com/DeusExVagina/sexscenegenerator/master/sexscenegenerator/JSONFIles/interludeactions.json")
+    fetch("https://raw.githubusercontent.com/DeusExVagina/react_sexstory_generator/master/JSONFIles/interludeactions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
           interludeActions: data.lines
         });
       });
-    fetch("https://raw.githubusercontent.com/DeusExVagina/sexscenegenerator/master/sexscenegenerator/JSONFIles/orgasmactions.json")
+    fetch("https://raw.githubusercontent.com/DeusExVagina/react_sexstory_generator/master/JSONFIles/orgasmactions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
