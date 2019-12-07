@@ -109,6 +109,7 @@ export default class App extends React.Component {
     undressingscene = getUndressingScene(this.state.undressingActions, this.state.interludeActions)
     var penetrationstartScene = getPenetrationStartScene(this.state.penetrationstartActions);
     var penetrationScene = getPenetrationScene(this.state.penetrationActions,this.state.orgasmActions);
+    var AfterglowScene = getAfterglowScene(this.state.AfterglowActions);
     this.setState({
       sexaction: kissingscene + undressingscene + penetrationstartScene + penetrationScene 
     })
@@ -281,13 +282,19 @@ function getFemaleOrgasmScene(orgasmActions) {
   return orgasmScene;
 
 }
+
 function getMaleOrgasmScene(orgasmActions) {
   var orgasmScene = '';
   orgasmScene += getRandom(orgasmActions.filter(function (item) {
     return item.genderdirection.startsWith("m")
   })).line + "\n\n";
   return orgasmScene;
+}
 
+function getAfterglowScene(afterglowActions) {
+  var afterglowScene = '';
+  afterglowScene += getRandom(afterglowActions).line + "\n\n";
+  return afterglowScene;
 }
 
 
