@@ -268,7 +268,7 @@ function getPenetrationScene(penetrationActions,orgasmactions) {
   penetrationScene += getRandom(penetrationActions.filter(function (item) {
     return item.heatlevel == 3
   })).line + "\n\n";
-  
+  penetrationScene += getMaleOrgasmScene(orgasmactions)+"\n\n";
   return penetrationScene;
 
 }
@@ -276,7 +276,15 @@ function getPenetrationScene(penetrationActions,orgasmactions) {
 function getFemaleOrgasmScene(orgasmActions) {
   var orgasmScene = '';
   orgasmScene += getRandom(orgasmActions.filter(function (item) {
-    return item.genderdirection.startsWith("f")//todo wrong gender, write some female orgasms
+    return item.genderdirection.startsWith("f")
+  })).line + "\n\n";
+  return orgasmScene;
+
+}
+function getMaleOrgasmScene(orgasmActions) {
+  var orgasmScene = '';
+  orgasmScene += getRandom(orgasmActions.filter(function (item) {
+    return item.genderdirection.startsWith("m")
   })).line + "\n\n";
   return orgasmScene;
 
