@@ -109,9 +109,9 @@ export default class App extends React.Component {
     undressingscene = getUndressingScene(this.state.undressingActions, this.state.interludeActions)
     var penetrationstartScene = getPenetrationStartScene(this.state.penetrationstartActions);
     var penetrationScene = getPenetrationScene(this.state.penetrationActions,this.state.orgasmActions);
-    var AfterglowScene = getAfterglowScene(this.state.AfterglowActions);
+    var afterglowScene = getAfterglowScene(this.state.afterglowActions);
     this.setState({
-      sexaction: kissingscene + undressingscene + penetrationstartScene + penetrationScene 
+      sexaction: kissingscene + undressingscene + penetrationstartScene + penetrationScene + afterglowScene
     })
   };
 
